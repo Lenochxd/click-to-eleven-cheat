@@ -7,15 +7,15 @@ print('WARNING: Running too many threads can slow down or freeze your system.')
 
 def get_threads_count():
     while True:
-        threads_count = input('\nEnter the number of threads (default=100, max=500)\nValue: ').strip()
+        threads_count = input('\nEnter the number of threads (default=50, max=200)\nValue: ').strip()
         if not threads_count:
-            return 100
+            return 50
         try:
             threads_count = int(threads_count)
         except ValueError:
             print('Invalid input.')
             continue
-        if 1 <= threads_count <= 500:
+        if 1 <= threads_count <= 200:
             return threads_count
         print('Invalid input.')
 
