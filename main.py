@@ -26,7 +26,7 @@ def spam_backspace():
         if GetWindowText(GetForegroundWindow()) == 'ClickToEleven':
             pyautogui.press('backspace')
 
-print('RESULT:',threads_count)
+print('program started')
 threads = []
 for _ in range(threads_count):
     thread = threading.Thread(target=spam_backspace)
