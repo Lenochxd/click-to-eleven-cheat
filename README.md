@@ -16,12 +16,10 @@ The script uses the `pyautogui` library to simulate keyboard input and the `win3
 
 ## Usage
 
-1. Install the required libraries:
-
+1. Install the required libraries: \
     `pip install pyautogui pywin32`
 
-2. Run the script:
-
+2. Run the script: \
     `python main.py`
 
 
